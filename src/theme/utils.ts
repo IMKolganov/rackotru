@@ -1,3 +1,4 @@
+import { hasFunctionalConsent } from '../cookies/consent'
 import { THEME_STORAGE_KEY, type Theme } from './types'
 
 export function isTheme(value: string): value is Theme {
@@ -5,11 +6,13 @@ export function isTheme(value: string): value is Theme {
 }
 
 export function detectTheme(): Theme {
-  try {
-    const stored = localStorage.getItem(THEME_STORAGE_KEY)
-    if (stored && isTheme(stored)) return stored
-  } catch {
-    // ignore
+  if (hasFunctionalConsent()) {
+    try {
+      const stored = localStorage.getItem(THEME_STORAGE_KEY)
+      if (stored && isTheme(stored)) return stored
+    } catch {
+      // ignore
+    }
   }
 
   if (window.matchMedia('(prefers-color-scheme: light)').matches) {
@@ -20,6 +23,8 @@ export function detectTheme(): Theme {
 }
 
 export function saveTheme(theme: Theme): void {
+  if (!hasFunctionalConsent()) return
+
   try {
     localStorage.setItem(THEME_STORAGE_KEY, theme)
   } catch {

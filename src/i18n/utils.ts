@@ -1,3 +1,4 @@
+import { hasFunctionalConsent } from '../cookies/consent'
 import { LOCALE_CODES, type DeepPartial, type LocaleCode, type Translations } from './types'
 import { en } from './locales/en'
 
@@ -8,11 +9,13 @@ export function isLocaleCode(value: string): value is LocaleCode {
 }
 
 export function detectLocale(): LocaleCode {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY)
-    if (stored && isLocaleCode(stored)) return stored
-  } catch {
-    // ignore
+  if (hasFunctionalConsent()) {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY)
+      if (stored && isLocaleCode(stored)) return stored
+    } catch {
+      // ignore
+    }
   }
 
   const languages = navigator.languages?.length
@@ -31,6 +34,8 @@ export function detectLocale(): LocaleCode {
 }
 
 export function saveLocale(locale: LocaleCode): void {
+  if (!hasFunctionalConsent()) return
+
   try {
     localStorage.setItem(STORAGE_KEY, locale)
   } catch {

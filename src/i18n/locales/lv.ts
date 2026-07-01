@@ -82,5 +82,44 @@ export const lv: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Avots GitHub',
+      privacy: 'Privātums',
+    },
+    cookies: {
+      banner:
+        'Vietne izmanto localStorage tikai valodai un tēmai. Bez analītikas vai reklāmas izsekošanas. Sīkāk privātuma paziņojumā.',
+      accept: 'Pieņemt',
+      reject: 'Tikai nepieciešamie',
+      privacy: 'Privātuma paziņojums',
+    },
+    privacy: {
+      title: 'Privātuma paziņojums',
+      updated: 'Atjaunināts: 2026. gada jūlijs',
+      close: 'Aizvērt',
+      sections: {
+        controller: {
+          title: 'Datu pārzinis',
+          body: 'Ivan Kolganov uztur rackot.ru. Privātuma jautājumi: Telegram @KolganovIvan vai LinkedIn (saites sadaļā Kontakti).',
+        },
+        data: {
+          title: 'Kādi dati tiek apstrādāti',
+          body: 'Statiska personīgā vietne. Nav lietotāju kontu un veidlapu. Mitināšanas žurnāli var ietvert IP, pārlūka tipu un pieprasījuma laiku — kā parastā web hostingā.',
+        },
+        cookies: {
+          title: 'Sīkdatnes un localStorage',
+          body: 'Piekrītot valoda un tēma tiek saglabāta pārlūkā (rackotru-locale, rackotru-theme, rackotru-consent). Tikai funkcionāli iestatījumi — bez izsekošanas. Izvēloties « Tikai nepieciešamie », iestatījumi netiek saglabāti starp apmeklējumiem.',
+        },
+        thirdParty: {
+          title: 'Trešo pušu saturs',
+          body: 'Vietne ielādē profila foto no GitHub, fontus no Google Fonts un saites uz ārējiem pakalpojumiem. Šiem pakalpojumu sniedzējiem ir savas privātuma politikas.',
+        },
+        rights: {
+          title: 'Jūsu tiesības (GDPR)',
+          body: 'Piekrišanu var atsaukt, dzēšot vietnes datus pārlūkā vai nākamajā apmeklējumā izvēloties « Tikai nepieciešamie ». Jums ir tiesības piekļūt datiem, labot, dzēst, ierobežot vai iebilst un iesniegt sūdzību uzraudzības iestādei.',
+        },
+        contact: {
+          title: 'Kontakti',
+          body: 'Jautājumi par šo paziņojumu: Ivan Kolganov — @KolganovIvan Telegram vai imkolganov LinkedIn.',
+        },
+      },
     },
   }

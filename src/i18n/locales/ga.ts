@@ -82,5 +82,44 @@ export const ga: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Foinse ar GitHub',
+      privacy: 'Príobháideachas',
+    },
+    cookies: {
+      banner:
+        'Úsáideann an suíomh localStorage ach le haghaidh teanga agus téama. Gan anailís ná rianú fógraíochta. Féach an fógra príobháideachais.',
+      accept: 'Glac leis',
+      reject: 'Riachtanach amháin',
+      privacy: 'Fógra príobháideachais',
+    },
+    privacy: {
+      title: 'Fógra príobháideachais',
+      updated: 'Nuashonraithe go deireanach: Iúil 2026',
+      close: 'Dún',
+      sections: {
+        controller: {
+          title: 'Rialaitheoir sonraí',
+          body: 'Tá Ivan Kolganov freagrach as rackot.ru. Maidir le príobháideachas: Telegram @KolganovIvan nó LinkedIn (naisc sa rannóg Teagmháil).',
+        },
+        data: {
+          title: 'Cad sonraí a phróiseáiltear',
+          body: 'Suíomh pearsanta statach. Gan cuntais úsáideora ná foirmeacha. D’fhéadfadh logaí óstála IP, cineál brabhsálaí agus am iarratais a áireamh — mar a bhíonn le hóstáil ghnáth.',
+        },
+        cookies: {
+          title: 'Fianáin agus localStorage',
+          body: 'Má ghlacann tú leis, stóráiltear teanga agus téama sa bhrabhsálaí (rackotru-locale, rackotru-theme, rackotru-consent). Roghanna feidhmiúla amháin — gan rianú. Le « Riachtanach amháin », ní shábháiltear roghanna idir cuairteanna.',
+        },
+        thirdParty: {
+          title: 'Ábhar tríú páirtí',
+          body: 'Lódálann an suíomh grianghraf próifíle ó GitHub, clónna ó Google Fonts agus naisc chuig seirbhísí seachtracha. Tá polasaithe príobháideachais féin ag na soláthraithe sin.',
+        },
+        rights: {
+          title: 'Do chearta (GDPR)',
+          body: 'Is féidir toiliú a tharraingt siar trí shonraí an tsuímh a ghlanadh sa bhrabhsálaí nó « Riachtanach amháin » a roghnú ar an chéad chuairt eile. Tá ceart rochtana, ceartúcháin, scriosta, srianta nó agóid agat, agus gearán le húdarás maoirseachta.',
+        },
+        contact: {
+          title: 'Teagmháil',
+          body: 'Ceisteanna faoin bhfógra seo: Ivan Kolganov — @KolganovIvan ar Telegram nó imkolganov ar LinkedIn.',
+        },
+      },
     },
   }

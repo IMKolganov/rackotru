@@ -82,5 +82,44 @@ export const sl: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Izvorna koda na GitHubu',
+      privacy: 'Zasebnost',
+    },
+    cookies: {
+      banner:
+        'Spletno mesto uporablja localStorage samo za jezik in temo. Brez analitike ali oglaševalskega sledenja. Podrobnosti v obvestilu o zasebnosti.',
+      accept: 'Sprejmi',
+      reject: 'Samo nujno',
+      privacy: 'Obvestilo o zasebnosti',
+    },
+    privacy: {
+      title: 'Obvestilo o zasebnosti',
+      updated: 'Nazadnje posodobljeno: julij 2026',
+      close: 'Zapri',
+      sections: {
+        controller: {
+          title: 'Upravljavec podatkov',
+          body: 'Ivan Kolganov upravlja rackot.ru. Za vprašanja o zasebnosti: Telegram @KolganovIvan ali LinkedIn (povezave v razdelku Kontakt).',
+        },
+        data: {
+          title: 'Kateri podatki se obdelujejo',
+          body: 'Statično osebno spletno mesto. Brez uporabniških računov in obrazcev. Dnevniki gostovanja lahko vsebujejo IP, vrsto brskalnika in čas zahteve — kot pri običajnem spletnem gostovanju.',
+        },
+        cookies: {
+          title: 'Piškotki in localStorage',
+          body: 'Ob sprejetju se jezik in tema shranita v brskalnik (rackotru-locale, rackotru-theme, rackotru-consent). Samo funkcionalne nastavitve — brez sledenja. Pri « Samo nujno » se nastavitve med obiski ne shranijo.',
+        },
+        thirdParty: {
+          title: 'Vsebina tretjih oseb',
+          body: 'Spletno mesto naloži profilno fotografijo z GitHuba, pisave Google Fonts in povezave do zunanjih storitev. Ti ponudniki imajo lastne politike zasebnosti.',
+        },
+        rights: {
+          title: 'Vaše pravice (GDPR)',
+          body: 'Soglasje lahko kadarkoli prekličete z brisanjem podatkov spletnega mesta v brskalniku ali z izbiro « Samo nujno » ob naslednjem obisku. Imate pravico do dostopa, popravka, izbrisa, omejitve ali ugovora ter pritožbe nadzornemu organu.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Vprašanja o tem obvestilu: Ivan Kolganov — @KolganovIvan na Telegramu ali imkolganov na LinkedIn.',
+        },
+      },
     },
   }

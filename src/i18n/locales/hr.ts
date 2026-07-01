@@ -82,5 +82,44 @@ export const hr: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Izvorni kod na GitHubu',
+      privacy: 'Privatnost',
+    },
+    cookies: {
+      banner:
+        'Stranica koristi localStorage samo za jezik i temu. Bez analitike ili oglašivačkog praćenja. Detalji u obavijesti o privatnosti.',
+      accept: 'Prihvati',
+      reject: 'Samo nužno',
+      privacy: 'Obavijest o privatnosti',
+    },
+    privacy: {
+      title: 'Obavijest o privatnosti',
+      updated: 'Zadnje ažuriranje: srpanj 2026.',
+      close: 'Zatvori',
+      sections: {
+        controller: {
+          title: 'Voditelj obrade',
+          body: 'Ivan Kolganov upravlja rackot.ru. Za zahtjeve o privatnosti: Telegram @KolganovIvan ili LinkedIn (poveznice u odjeljku Kontakt).',
+        },
+        data: {
+          title: 'Koji se podaci obrađuju',
+          body: 'Statična osobna stranica. Nema korisničkih računa ni obrazaca. Logovi hostinga mogu sadržavati IP, vrstu preglednika i vrijeme zahtjeva — kao kod uobičajenog web hostinga.',
+        },
+        cookies: {
+          title: 'Kolačići i localStorage',
+          body: 'Ako prihvatite, jezik i tema spremaju se u preglednik (rackotru-locale, rackotru-theme, rackotru-consent). Samo funkcionalne postavke — bez praćenja. Uz « Samo nužno », postavke se ne spremaju između posjeta.',
+        },
+        thirdParty: {
+          title: 'Sadržaj trećih strana',
+          body: 'Stranica učitava profilnu fotografiju s GitHuba, fontove Google Fonts i poveznice na vanjske usluge. Ti pružatelji imaju vlastite politike privatnosti.',
+        },
+        rights: {
+          title: 'Vaša prava (GDPR)',
+          body: 'Pristanak možete povući brisanjem podataka stranice u pregledniku ili odabirom « Samo nužno » pri sljedećem posjetu. Imate pravo na pristup, ispravak, brisanje, ograničenje ili prigovor te podnošenje pritužbe nadzornom tijelu.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Pitanja o ovoj obavijesti: Ivan Kolganov — @KolganovIvan na Telegramu ili imkolganov na LinkedInu.',
+        },
+      },
     },
   }

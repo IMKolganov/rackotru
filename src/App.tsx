@@ -6,6 +6,8 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
+import PrivacyModal from './components/PrivacyModal'
 import { resolveInitialHash } from './utils/scroll'
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <CookieBanner />
+      <PrivacyModal />
     </>
   )
 }

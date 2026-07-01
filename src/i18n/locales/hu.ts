@@ -82,5 +82,44 @@ export const hu: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Forráskód a GitHubon',
+      privacy: 'Adatvédelem',
+    },
+    cookies: {
+      banner:
+        'Az oldal localStorage-t csak nyelvhez és témához használ. Nincs analitika vagy hirdetéskövetés. Részletek az adatvédelmi tájékoztatóban.',
+      accept: 'Elfogadom',
+      reject: 'Csak szükséges',
+      privacy: 'Adatvédelmi tájékoztató',
+    },
+    privacy: {
+      title: 'Adatvédelmi tájékoztató',
+      updated: 'Utolsó frissítés: 2026. július',
+      close: 'Bezárás',
+      sections: {
+        controller: {
+          title: 'Adatkezelő',
+          body: 'Ivan Kolganov üzemelteti a rackot.ru oldalt. Adatvédelmi kérdések: Telegram @KolganovIvan vagy LinkedIn (linkek a Kapcsolat szekcióban).',
+        },
+        data: {
+          title: 'Milyen adatokat kezelünk',
+          body: 'Statikus személyes weboldal. Nincsenek felhasználói fiókok és űrlapok. A tárhely naplói tartalmazhatnak IP-címet, böngészőtípust és kérés idejét — mint általában webhostingnál.',
+        },
+        cookies: {
+          title: 'Cookie-k és localStorage',
+          body: 'Elfogadás esetén a nyelv és téma a böngészőben tárolódik (rackotru-locale, rackotru-theme, rackotru-consent). Funkcionális beállítások — nem követés. « Csak szükséges » esetén a beállítások nem maradnak meg látogatások között.',
+        },
+        thirdParty: {
+          title: 'Harmadik fél tartalma',
+          body: 'Az oldal profilképet tölt GitHubról, betűtípusokat Google Fontsból, és linkeket tartalmaz külső szolgáltatásokhoz. Ezeknek saját adatvédelmi szabályzata van.',
+        },
+        rights: {
+          title: 'Az Ön jogai (GDPR)',
+          body: 'A hozzájárulást bármikor visszavonhatja az oldal adatainak törlésével a böngészőben, vagy a következő látogatáskor a « Csak szükséges » választással. Joga van hozzáféréshez, helyesbítéshez, törléshez, korlátozáshoz vagy tiltakozáshoz, és panaszt tehet a felügyeleti hatóságnál.',
+        },
+        contact: {
+          title: 'Kapcsolat',
+          body: 'Kérdések erről a tájékoztatóról: Ivan Kolganov — @KolganovIvan Telegramon vagy imkolganov LinkedInen.',
+        },
+      },
     },
   }

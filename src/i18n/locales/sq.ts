@@ -82,5 +82,44 @@ export const sq: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Burimi në GitHub',
+      privacy: 'Privatësia',
+    },
+    cookies: {
+      banner:
+        'Faqja përdor localStorage vetëm për gjuhën dhe temën. Pa analitikë ose gjurmim reklamash. Shih njoftimin e privatësisë.',
+      accept: 'Prano',
+      reject: 'Vetëm thelbësore',
+      privacy: 'Njoftim privatësie',
+    },
+    privacy: {
+      title: 'Njoftim privatësie',
+      updated: 'Përditësuar së fundmi: korrik 2026',
+      close: 'Mbyll',
+      sections: {
+        controller: {
+          title: 'Përgjegjësi i të dhënave',
+          body: 'Ivan Kolganov operon rackot.ru. Për kërkesa privatësie: Telegram @KolganovIvan ose LinkedIn (lidhjet në seksionin Kontakt).',
+        },
+        data: {
+          title: 'Çfarë të dhënash përpunohen',
+          body: 'Faqe personale statike. Pa llogari përdoruesi ose formularë. Regjistrat e hostimit mund të përfshijnë IP, lloj shfletuesi dhe kohën e kërkesës — si në hostim web normal.',
+        },
+        cookies: {
+          title: 'Cookies dhe localStorage',
+          body: 'Nëse pranoni, gjuha dhe tema ruhen në shfletues (rackotru-locale, rackotru-theme, rackotru-consent). Vetëm preferenca funksionale — pa gjurmim. Me « Vetëm thelbësore », preferencat nuk ruhen midis vizitave.',
+        },
+        thirdParty: {
+          title: 'Përmbajtje e palëve të treta',
+          body: 'Faqja ngarkon foto profili nga GitHub, fonte nga Google Fonts dhe lidhje me shërbime të jashtme. Këta ofrues kanë politikat e tyre të privatësisë.',
+        },
+        rights: {
+          title: 'Të drejtat tuaja (GDPR)',
+          body: 'Mund të tërhiqni pëlqimin duke fshirë të dhënat e faqes në shfletues ose duke zgjedhur « Vetëm thelbësore » në vizitën tjetër. Keni të drejtë aksesi, korrigjimi, fshirjeje, kufizimi ose kundërshtimi dhe ankesës te autoriteti mbikëqyrës.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Pyetje për këtë njoftim: Ivan Kolganov — @KolganovIvan në Telegram ose imkolganov në LinkedIn.',
+        },
+      },
     },
   }

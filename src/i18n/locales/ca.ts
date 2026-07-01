@@ -82,5 +82,44 @@ export const ca: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Codi a GitHub',
+      privacy: 'Privacitat',
+    },
+    cookies: {
+      banner:
+        'Aquest lloc usa localStorage només per a idioma i tema. Sense analítica ni seguiment publicitari. Vegeu l\'avís de privacitat.',
+      accept: 'Accepta',
+      reject: 'Només essencials',
+      privacy: 'Avís de privacitat',
+    },
+    privacy: {
+      title: 'Avís de privacitat',
+      updated: 'Darrera actualització: juliol de 2026',
+      close: 'Tanca',
+      sections: {
+        controller: {
+          title: 'Responsable del tractament',
+          body: 'Ivan Kolganov opera rackot.ru. Per a sol·licituds de privacitat: Telegram @KolganovIvan o LinkedIn (enllaços a la secció Contacte).',
+        },
+        data: {
+          title: 'Quines dades es processen',
+          body: 'Lloc personal estàtic. Sense comptes d\'usuari ni formularis. Els registres d\'allotjament poden incloure IP, tipus de navegador i hora de la sol·licitud — com en un allotjament web habitual.',
+        },
+        cookies: {
+          title: 'Cookies i localStorage',
+          body: 'Si accepteu, s\'emmagatzemen idioma i tema al navegador (rackotru-locale, rackotru-theme, rackotru-consent). Només preferències funcionals — sense seguiment. Amb « Només essencials », les preferències no es desen entre visites.',
+        },
+        thirdParty: {
+          title: 'Contingut de tercers',
+          body: 'El lloc carrega una foto de perfil de GitHub, fonts de Google Fonts i enllaços a serveis externs. Aquests proveïdors tenen les seves pròpies polítiques de privacitat.',
+        },
+        rights: {
+          title: 'Els vostres drets (RGPD)',
+          body: 'Podeu retirar el consentiment esborrant les dades del lloc al navegador o triant « Només essencials » a la propera visita. Teniu dret d\'accés, rectificació, supressió, limitació o oposició, i a presentar una reclamació a l\'autoritat de control.',
+        },
+        contact: {
+          title: 'Contacte',
+          body: 'Preguntes sobre aquest avís: Ivan Kolganov — @KolganovIvan a Telegram o imkolganov a LinkedIn.',
+        },
+      },
     },
   }

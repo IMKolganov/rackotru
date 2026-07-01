@@ -82,5 +82,44 @@ export const cy: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Cod ffynhonnell ar GitHub',
+      privacy: 'Preifatrwydd',
+    },
+    cookies: {
+      banner:
+        'Mae\'r safle yn defnyddio localStorage ar gyfer iaith a thema yn unig. Dim dadansoddeg na olrhain hysbysebion. Gweler yr hysbysiad preifatrwydd.',
+      accept: 'Derbyn',
+      reject: 'Hanfodol yn unig',
+      privacy: 'Hysbysiad preifatrwydd',
+    },
+    privacy: {
+      title: 'Hysbysiad preifatrwydd',
+      updated: 'Diweddarwyd ddiwethaf: Gorffennaf 2026',
+      close: 'Cau',
+      sections: {
+        controller: {
+          title: 'Prosesydd data',
+          body: 'Mae Ivan Kolganov yn gweithredu rackot.ru. Am geisiadau preifatrwydd: Telegram @KolganovIvan neu LinkedIn (dolenni yn yr adran Cysylltu).',
+        },
+        data: {
+          title: 'Pa ddata sy\'n cael ei brosesu',
+          body: 'Safle personol statig. Dim cyfrifon defnyddwyr na ffurflenni. Gall logiau hosting gynnwys IP, math porwr ac amser cais — fel mewn gwesteio gwe arferol.',
+        },
+        cookies: {
+          title: 'Cwcis a localStorage',
+          body: 'Os byddwch yn derbyn, caiff iaith a thema eu cadw yn y porwr (rackotru-locale, rackotru-theme, rackotru-consent). Dim ond dewisiadau swyddogaethol — dim olrhain. Gyda « Hanfodol yn unig », ni chaiff dewisiadau eu cadw rhwng ymweliadau.',
+        },
+        thirdParty: {
+          title: 'Cynnwys trydydd parti',
+          body: 'Mae\'r safle yn llwytho llun proffil o GitHub, ffontiau Google Fonts a dolenni i wasanaethau allanol. Mae gan y darparwyr hynny eu polisïau preifatrwydd eu hunain.',
+        },
+        rights: {
+          title: 'Eich hawliau (GDPR)',
+          body: 'Gallwch dynnu\'ch caniatâd yn ôl trwy glirio data\'r safle yn y porwr neu ddewis « Hanfodol yn unig » ar ymweliad nesaf. Mae gennych hawl mynediad, cywiro, dileu, cyfyngu neu wrthwynebu, a hawl i gwyno i\'r awdurdod goruchwylio.',
+        },
+        contact: {
+          title: 'Cysylltu',
+          body: 'Cwestiynau am yr hysbysiad hwn: Ivan Kolganov — @KolganovIvan ar Telegram neu imkolganov ar LinkedIn.',
+        },
+      },
     },
   }

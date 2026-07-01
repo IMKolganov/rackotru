@@ -82,5 +82,44 @@ export const pl: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Kod na GitHub',
+      privacy: 'Prywatność',
+    },
+    cookies: {
+      banner:
+        'Ta strona używa localStorage tylko do języka i motywu. Bez analityki i śledzenia reklam. Szczegóły w informacji o prywatności.',
+      accept: 'Akceptuj',
+      reject: 'Tylko niezbędne',
+      privacy: 'Informacja o prywatności',
+    },
+    privacy: {
+      title: 'Informacja o prywatności',
+      updated: 'Ostatnia aktualizacja: lipiec 2026',
+      close: 'Zamknij',
+      sections: {
+        controller: {
+          title: 'Administrator danych',
+          body: 'Ivan Kolganov prowadzi rackot.ru. W sprawach prywatności: Telegram @KolganovIvan lub LinkedIn (linki w sekcji Kontakt).',
+        },
+        data: {
+          title: 'Jakie dane są przetwarzane',
+          body: 'Statyczna strona osobista. Brak kont użytkowników i formularzy. Logi hostingu mogą zawierać adres IP, typ przeglądarki i czas żądania — jak przy zwykłym hostingu.',
+        },
+        cookies: {
+          title: 'Pliki cookie i localStorage',
+          body: 'Po akceptacji język i motyw są zapisywane w przeglądarce (rackotru-locale, rackotru-theme, rackotru-consent). To ustawienia funkcjonalne — bez śledzenia. Przy « Tylko niezbędne » ustawienia nie są zapisywane między wizytami.',
+        },
+        thirdParty: {
+          title: 'Treści stron trzecich',
+          body: 'Strona ładuje zdjęcie profilowe z GitHub, czcionki Google Fonts i linki do zewnętrznych usług. Ci dostawcy mają własne polityki prywatności.',
+        },
+        rights: {
+          title: 'Twoje prawa (RODO)',
+          body: 'Możesz wycofać zgodę, usuwając dane strony w przeglądarce lub wybierając « Tylko niezbędne » przy następnej wizycie. Masz prawo dostępu, sprostowania, usunięcia, ograniczenia lub sprzeciwu oraz skargi do organu nadzorczego.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Pytania dotyczące tej informacji: Ivan Kolganov — @KolganovIvan na Telegramie lub imkolganov na LinkedIn.',
+        },
+      },
     },
   }

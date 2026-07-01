@@ -82,5 +82,44 @@ export const lt: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Šaltinis GitHub',
+      privacy: 'Privatumas',
+    },
+    cookies: {
+      banner:
+        'Svetainė naudoja localStorage tik kalbai ir temai. Be analitikos ar reklaminio sekimosi. Daugiau – privatumo pranešime.',
+      accept: 'Sutinku',
+      reject: 'Tik būtina',
+      privacy: 'Privatumo pranešimas',
+    },
+    privacy: {
+      title: 'Privatumo pranešimas',
+      updated: 'Atnaujinta: 2026 m. liepa',
+      close: 'Uždaryti',
+      sections: {
+        controller: {
+          title: 'Duomenų valdytojas',
+          body: 'Ivan Kolganov valdo rackot.ru. Privatumo klausimais: Telegram @KolganovIvan arba LinkedIn (nuorodos skyriuje Kontaktai).',
+        },
+        data: {
+          title: 'Kokie duomenys tvarkomi',
+          body: 'Statinė asmeninė svetainė. Nėra vartotojo paskyrų ir formų. Hosting logai gali apimti IP, naršyklės tipą ir užklausos laiką — kaip įprastame web hostinge.',
+        },
+        cookies: {
+          title: 'Slapukai ir localStorage',
+          body: 'Sutikus kalba ir tema saugomi naršyklėje (rackotru-locale, rackotru-theme, rackotru-consent). Tik funkciniai nustatymai — be sekimo. Pasirinkus « Tik būtina », nustatymai neįsimenami tarp apsilankymų.',
+        },
+        thirdParty: {
+          title: 'Trečiųjų šalių turinys',
+          body: 'Svetainė įkelia profilio nuotrauką iš GitHub, šriftus iš Google Fonts ir nuorodas į išorines paslaugas. Šie tiekėjai turi savo privatumo politiką.',
+        },
+        rights: {
+          title: 'Jūsų teisės (BDAR)',
+          body: 'Sutikimą galite atšaukti ištrindami svetainės duomenis naršyklėje arba kitą kartą pasirinkę « Tik būtina ». Turite teisę į prieigą, ištaisymą, ištrynimą, apribojimą ar prieštaravimą ir skundą priežiūros institucijai.',
+        },
+        contact: {
+          title: 'Kontaktai',
+          body: 'Klausimai apie šį pranešimą: Ivan Kolganov — @KolganovIvan Telegram arba imkolganov LinkedIn.',
+        },
+      },
     },
   }

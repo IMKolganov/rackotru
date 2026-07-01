@@ -82,5 +82,44 @@ export const tr: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Kaynak kod GitHub\'da',
+      privacy: 'Gizlilik',
+    },
+    cookies: {
+      banner:
+        'Bu site yalnızca dil ve tema için localStorage kullanır. Analitik veya reklam izleme yok. Ayrıntılar gizlilik bildiriminde.',
+      accept: 'Kabul et',
+      reject: 'Yalnızca gerekli',
+      privacy: 'Gizlilik bildirimi',
+    },
+    privacy: {
+      title: 'Gizlilik bildirimi',
+      updated: 'Son güncelleme: Temmuz 2026',
+      close: 'Kapat',
+      sections: {
+        controller: {
+          title: 'Veri sorumlusu',
+          body: 'Ivan Kolganov rackot.ru sitesini işletir. Gizlilik talepleri için: Telegram @KolganovIvan veya LinkedIn (İletişim bölümündeki bağlantılar).',
+        },
+        data: {
+          title: 'Hangi veriler işlenir',
+          body: 'Statik kişisel site. Kullanıcı hesabı veya form yok. Barındırma günlükleri IP, tarayıcı türü ve istek zamanını içerebilir — normal web barındırmada olduğu gibi.',
+        },
+        cookies: {
+          title: 'Çerezler ve localStorage',
+          body: 'Kabul ederseniz dil ve tema tarayıcıda saklanır (rackotru-locale, rackotru-theme, rackotru-consent). Yalnızca işlevsel tercihler — izleme yok. « Yalnızca gerekli » seçeneğinde tercihler ziyaretler arasında saklanmaz.',
+        },
+        thirdParty: {
+          title: 'Üçüncü taraf içerik',
+          body: 'Site GitHub\'dan profil fotoğrafı, Google Fonts\'tan yazı tipleri yükler ve harici hizmetlere bağlantılar içerir. Bu sağlayıcıların kendi gizlilik politikaları vardır.',
+        },
+        rights: {
+          title: 'Haklarınız (GDPR)',
+          body: 'Tarayıcıdaki site verilerini silerek veya bir sonraki ziyarette « Yalnızca gerekli » seçerek onayı geri çekebilirsiniz. Erişim, düzeltme, silme, kısıtlama veya itiraz hakkınız ve denetim otoritesine şikâyet hakkınız vardır.',
+        },
+        contact: {
+          title: 'İletişim',
+          body: 'Bu bildirimle ilgili sorular: Ivan Kolganov — Telegram\'da @KolganovIvan veya LinkedIn\'de imkolganov.',
+        },
+      },
     },
   }

@@ -82,5 +82,44 @@ export const mt: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Kodiċi fuq GitHub',
+      privacy: 'Privatezza',
+    },
+    cookies: {
+      banner:
+        'Dan is-sit juża localStorage biss għal-lingwa u tema. L-ebda analitika jew tracking ta\' reklami. Ara n-notifika tal-privatezza.',
+      accept: 'Aċċetta',
+      reject: 'Essenzjali biss',
+      privacy: 'Notifika tal-privatezza',
+    },
+    privacy: {
+      title: 'Notifika tal-privatezza',
+      updated: 'Aġġornat l-aħħar: Lulju 2026',
+      close: 'Agħlaq',
+      sections: {
+        controller: {
+          title: 'Kontrollur tad-data',
+          body: 'Ivan Kolganov joperaw rackot.ru. Għal talbiet ta\' privatezza: Telegram @KolganovIvan jew LinkedIn (links fil-sezzjoni Kuntatt).',
+        },
+        data: {
+          title: 'Liema data tiġi pproċessata',
+          body: 'Sit personali statiku. L-ebda kontijiet utenti jew formoli. Il-logs tal-hosting jistgħu jinkludu IP, tip ta\' browser u ħin tat-talba — bħal hosting web normali.',
+        },
+        cookies: {
+          title: 'Cookies u localStorage',
+          body: 'Jekk taċċetta, il-lingwa u t-tema jiġu maħżuna fil-browser (rackotru-locale, rackotru-theme, rackotru-consent). Preferenzi funzjonali biss — mhux tracking. Bil-« Essenzjali biss », il-preferenzi ma jiġux salvati bejn iż-żjarat.',
+        },
+        thirdParty: {
+          title: 'Kontenut ta\' terzi',
+          body: 'Is-sit jiloadja ritratt tal-profil minn GitHub, fonts minn Google Fonts u links għal servizzi esterni. Dawk il-fornituri għandhom politiki ta\' privatezza tagħhom stess.',
+        },
+        rights: {
+          title: 'Id-drittijiet tiegħek (GDPR)',
+          body: 'Tista\' tirtira l-kunsens billi tneħħi d-data tas-sit mill-browser jew tagħżel « Essenzjali biss » fil-viżita li jmiss. Għandek dritt ta\' aċċess, rettifikazzjoni, tħassir, restrizzjoni jew objezzjoni, u tikteb lill-awtorità ta\' superviżjoni.',
+        },
+        contact: {
+          title: 'Kuntatt',
+          body: 'Mistoqsijiet dwar din in-notifika: Ivan Kolganov — @KolganovIvan fuq Telegram jew imkolganov fuq LinkedIn.',
+        },
+      },
     },
   }

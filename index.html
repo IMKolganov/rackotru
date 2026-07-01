@@ -12,7 +12,8 @@
     <script>
       (function () {
         try {
-          var stored = localStorage.getItem('rackotru-theme');
+          var consent = localStorage.getItem('rackotru-consent');
+          var stored = consent === 'accepted' ? localStorage.getItem('rackotru-theme') : null;
           var theme = stored === 'light' || stored === 'dark'
             ? stored
             : window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';

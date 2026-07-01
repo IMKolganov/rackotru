@@ -82,5 +82,44 @@ export const cs: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Zdrojový kód na GitHubu',
+      privacy: 'Ochrana soukromí',
+    },
+    cookies: {
+      banner:
+        'Tento web používá localStorage pouze pro jazyk a motiv. Bez analytiky a reklamního sledování. Podrobnosti v oznámení o ochraně soukromí.',
+      accept: 'Přijmout',
+      reject: 'Pouze nezbytné',
+      privacy: 'Oznámení o ochraně soukromí',
+    },
+    privacy: {
+      title: 'Oznámení o ochraně soukromí',
+      updated: 'Poslední aktualizace: červenec 2026',
+      close: 'Zavřít',
+      sections: {
+        controller: {
+          title: 'Správce údajů',
+          body: 'Ivan Kolganov provozuje rackot.ru. Pro dotazy k ochraně soukromí: Telegram @KolganovIvan nebo LinkedIn (odkazy v sekci Kontakt).',
+        },
+        data: {
+          title: 'Jaké údaje se zpracovávají',
+          body: 'Statický osobní web. Žádné uživatelské účty ani formuláře. Logy hostingu mohou obsahovat IP adresu, typ prohlížeče a čas požadavku — jako u běžného webhostingu.',
+        },
+        cookies: {
+          title: 'Cookies a localStorage',
+          body: 'Po souhlasu se v prohlížeči ukládají jazyk a motiv (rackotru-locale, rackotru-theme, rackotru-consent). Jde o funkční preference — ne sledování. Při « Pouze nezbytné » se preference mezi návštěvami neukládají.',
+        },
+        thirdParty: {
+          title: 'Obsah třetích stran',
+          body: 'Web načítá profilovou fotku z GitHubu, písma Google Fonts a odkazy na externí služby. Ti poskytovatelé mají vlastní zásady ochrany soukromí.',
+        },
+        rights: {
+          title: 'Vaše práva (GDPR)',
+          body: 'Souhlas můžete kdykoli odvolat smazáním dat webu v prohlížeči nebo volbou « Pouze nezbytné » při příští návštěvě. Máte právo na přístup, opravu, výmaz, omezení nebo námitku a podat stížnost u dozorového úřadu.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Dotazy k tomuto oznámení: Ivan Kolganov — @KolganovIvan na Telegramu nebo imkolganov na LinkedIn.',
+        },
+      },
     },
   }

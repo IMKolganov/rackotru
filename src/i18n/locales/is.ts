@@ -82,5 +82,44 @@ export const is: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Grunnkóði á GitHub',
+      privacy: 'Persónuvernd',
+    },
+    cookies: {
+      banner:
+        'Síðan notar localStorage aðeins fyrir tungumál og þema. Engin greining né auglýsingar rakning. Sjá persónuverndartilkynningu.',
+      accept: 'Samþykkja',
+      reject: 'Aðeins nauðsynlegt',
+      privacy: 'Persónuverndartilkynning',
+    },
+    privacy: {
+      title: 'Persónuverndartilkynning',
+      updated: 'Síðast uppfært: júlí 2026',
+      close: 'Loka',
+      sections: {
+        controller: {
+          title: 'Ábyrgðaraðili',
+          body: 'Ivan Kolganov rekur rackot.ru. Fyrir persónuverndarfyrirspurnir: Telegram @KolganovIvan eða LinkedIn (tenglar í kafla Samband).',
+        },
+        data: {
+          title: 'Hvaða gögn eru unnin',
+          body: 'Kyrrstæð persónuleg vefsíða. Engir notendareikningar eða eyðublöð. Hýsingarskrár geta innihaldið IP, vafrategund og tíma beiðni — eins og við venjulega vefhýsingu.',
+        },
+        cookies: {
+          title: 'Vafrakökur og localStorage',
+          body: 'Ef þú samþykkir eru tungumál og þema vistað í vafranum (rackotru-locale, rackotru-theme, rackotru-consent). Aðeins virkni stillingar — engin rakning. Með « Aðeins nauðsynlegt » eru stillingar ekki vistaðar milli heimsókna.',
+        },
+        thirdParty: {
+          title: 'Efni þriðja aðila',
+          body: 'Síðan hleður prófílmynd frá GitHub, leturgerðir frá Google Fonts og tengla á ytri þjónustu. Þessir veitendur hafa sínar eigin persónuverndarstefnur.',
+        },
+        rights: {
+          title: 'Réttindi þín (GDPR)',
+          body: 'Þú getur dregið samþykki til baka með því að hreinsa gögn síðunnar í vafranum eða valið « Aðeins nauðsynlegt » við næstu heimsókn. Þú átt rétt á aðgangi, leiðréttingu, eyðingu, takmörkun eða mótmælum og kvörtun til eftirlitsyfirvalds.',
+        },
+        contact: {
+          title: 'Samband',
+          body: 'Spurningar um þessa tilkynningu: Ivan Kolganov — @KolganovIvan á Telegram eða imkolganov á LinkedIn.',
+        },
+      },
     },
   }

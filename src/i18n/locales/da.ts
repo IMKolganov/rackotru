@@ -82,5 +82,44 @@ export const da: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Kildekode på GitHub',
+      privacy: 'Privatliv',
+    },
+    cookies: {
+      banner:
+        'Dette site bruger localStorage kun til sprog og tema. Ingen analyse eller annoncesporing. Se privatlivsmeddelelsen.',
+      accept: 'Acceptér',
+      reject: 'Kun nødvendige',
+      privacy: 'Privatlivsmeddelelse',
+    },
+    privacy: {
+      title: 'Privatlivsmeddelelse',
+      updated: 'Sidst opdateret: juli 2026',
+      close: 'Luk',
+      sections: {
+        controller: {
+          title: 'Dataansvarlig',
+          body: 'Ivan Kolganov driver rackot.ru. For privatlivsanmodninger: Telegram @KolganovIvan eller LinkedIn (links i afsnittet Kontakt).',
+        },
+        data: {
+          title: 'Hvilke data behandles',
+          body: 'Statisk personlig hjemmeside. Ingen brugerkonti eller formularer. Hostinglogs kan indeholde IP-adresse, browsertype og tidspunkt — som ved normal webhosting.',
+        },
+        cookies: {
+          title: 'Cookies og localStorage',
+          body: 'Hvis du accepterer, gemmes sprog og tema i browseren (rackotru-locale, rackotru-theme, rackotru-consent). Kun funktionelle indstillinger — ingen sporing. Med « Kun nødvendige » gemmes indstillinger ikke mellem besøg.',
+        },
+        thirdParty: {
+          title: 'Tredjepartsindhold',
+          body: 'Siden indlæser profilbillede fra GitHub, skrifttyper fra Google Fonts og links til eksterne tjenester. Disse udbydere har egne privatlivspolitikker.',
+        },
+        rights: {
+          title: 'Dine rettigheder (GDPR)',
+          body: 'Du kan tilbagekalde samtykke ved at slette sitedata i browseren eller vælge « Kun nødvendige » ved næste besøg. Du har ret til indsigt, berigtigelse, sletning, begrænsning eller indsigelse og til at klage til tilsynsmyndighed.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Spørgsmål om denne meddelelse: Ivan Kolganov — @KolganovIvan på Telegram eller imkolganov på LinkedIn.',
+        },
+      },
     },
   }

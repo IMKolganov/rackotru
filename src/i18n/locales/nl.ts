@@ -82,5 +82,44 @@ export const nl: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Broncode op GitHub',
+      privacy: 'Privacy',
+    },
+    cookies: {
+      banner:
+        'Deze site gebruikt localStorage alleen voor taal en thema. Geen analytics of advertentietracking. Zie het privacybericht.',
+      accept: 'Accepteren',
+      reject: 'Alleen essentieel',
+      privacy: 'Privacybericht',
+    },
+    privacy: {
+      title: 'Privacybericht',
+      updated: 'Laatst bijgewerkt: juli 2026',
+      close: 'Sluiten',
+      sections: {
+        controller: {
+          title: 'Verwerkingsverantwoordelijke',
+          body: 'Ivan Kolganov beheert rackot.ru. Voor privacyverzoeken: Telegram @KolganovIvan of LinkedIn (links in het gedeelte Contact).',
+        },
+        data: {
+          title: 'Welke gegevens worden verwerkt',
+          body: 'Statische persoonlijke website. Geen gebruikersaccounts of formulieren. Serverlogs bij de host kunnen IP-adres, browsertype en aanvraagtijd bevatten — zoals bij normale webhosting.',
+        },
+        cookies: {
+          title: 'Cookies en localStorage',
+          body: 'Bij acceptatie worden taal en thema in de browser opgeslagen (rackotru-locale, rackotru-theme, rackotru-consent). Alleen functionele voorkeuren — geen tracking. Bij « Alleen essentieel » worden voorkeuren niet tussen bezoeken bewaard.',
+        },
+        thirdParty: {
+          title: 'Content van derden',
+          body: 'De site laadt een profielfoto van GitHub, lettertypen van Google Fonts en links naar externe diensten. Die aanbieders hebben hun eigen privacybeleid.',
+        },
+        rights: {
+          title: 'Uw rechten (AVG)',
+          body: 'U kunt toestemming intrekken door sitegegevens in de browser te wissen of bij uw volgende bezoek « Alleen essentieel » te kiezen. U heeft recht op inzage, rectificatie, verwijdering, beperking of bezwaar, en op klacht bij een toezichthoudende autoriteit.',
+        },
+        contact: {
+          title: 'Contact',
+          body: 'Vragen over dit bericht: Ivan Kolganov — @KolganovIvan op Telegram of imkolganov op LinkedIn.',
+        },
+      },
     },
   }

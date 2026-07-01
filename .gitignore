@@ -1,0 +1,40 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Laravel
+/public/hot
+/public/storage
+/storage/*.key
+/storage/
+/bootstrap/cache/*
+!bootstrap/cache/.gitkeep
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+# Composer binaries (not needed in repo)
+composer.phar
+composer-setup.php
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Personal documents (local only)
+public/personal-check.jpg
+storage/app/public/images/personal-check*.jpg
+
+# Media
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv

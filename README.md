@@ -1,27 +1,36 @@
 # rackotru
 
-Archive of the personal **Rackot** website (Laravel 7, ~2020–2022).
+Personal developer landing page — [Ivan Kolganov](https://github.com/IMKolganov).
 
-Sources were recovered from 1gb.ru hosting for historical reference. Active development happens on `develop` — a full React rewrite is planned.
+## Stack
 
-## Legacy stack
+- React 19 + TypeScript
+- Vite 6
 
-- PHP 7.2+ / Laravel 7
-- MySQL
-- Telegram bot (`/telegabot`)
-
-## Local setup
+## Development
 
 ```bash
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan serve
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173).
+
+## Build
+
+```bash
+npm run build
+npm run preview
 ```
 
 ## Branches
 
 | Branch | Purpose |
 |--------|---------|
-| `develop` | Main development branch |
-| `main` | Production (after redesign) |
+| `develop` | Active development |
+| `main` | Production |
+| `archive/laravel-legacy` | Historical Laravel site (2020–2022) |
+
+## Legacy
+
+The original Laravel 7 site is preserved on [`archive/laravel-legacy`](https://github.com/IMKolganov/rackotru/tree/archive/laravel-legacy).

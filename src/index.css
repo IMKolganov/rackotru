@@ -107,6 +107,7 @@ img {
 main {
   position: relative;
   z-index: 1;
+  padding-top: var(--nav-h);
 }
 
 /* Background effects */
@@ -173,6 +174,7 @@ main {
   max-width: var(--max);
   margin: 0 auto;
   padding: 5rem 1.5rem;
+  scroll-margin-top: calc(var(--nav-h) + 0.75rem);
 }
 
 .section__header {
@@ -201,10 +203,18 @@ main {
 }
 
 /* Nav */
-.nav {
-  position: sticky;
+.nav-shell {
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
+  backdrop-filter: blur(12px);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -213,9 +223,6 @@ main {
   margin: 0 auto;
   padding: 1rem 1.5rem;
   height: var(--nav-h);
-  backdrop-filter: blur(12px);
-  background: var(--nav-bg);
-  border-bottom: 1px solid var(--border);
 }
 
 .nav__logo {

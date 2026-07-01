@@ -6,11 +6,11 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { stripBareHash } from './utils/url'
+import { resolveInitialHash } from './utils/scroll'
 
 export default function App() {
   useEffect(() => {
-    stripBareHash()
+    resolveInitialHash()
   }, [])
 
   return (

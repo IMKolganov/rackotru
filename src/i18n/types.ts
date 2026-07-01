@@ -65,6 +65,7 @@ export interface Translations {
   }
   hero: {
     greeting: string
+    name: string
     tagline: string
     bio: string
     viewProjects: string
@@ -100,6 +101,9 @@ export interface Translations {
     links: {
       github: string
       linkedin: string
+      instagram: string
+      twitter: string
+      facebook: string
       datagate: string
       rackot: string
       coffee: string

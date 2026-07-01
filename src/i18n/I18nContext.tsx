@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
-import { localeOverrides } from './locales/registry'
+import { getTranslations } from './locales'
 import { en } from './locales/en'
 import {
   LOCALE_CODES,
@@ -7,12 +7,7 @@ import {
   type LocaleCode,
   type Translations,
 } from './types'
-import {
-  buildTranslations,
-  detectLocale,
-  interpolate,
-  saveLocale,
-} from './utils'
+import { detectLocale, interpolate, saveLocale } from './utils'
 
 interface I18nContextValue {
   locale: LocaleCode
@@ -25,7 +20,7 @@ interface I18nContextValue {
 const I18nContext = createContext<I18nContextValue | null>(null)
 
 function resolveTranslations(locale: LocaleCode): Translations {
-  return buildTranslations(locale, localeOverrides[locale])
+  return getTranslations(locale)
 }
 
 export function I18nProvider({ children }: { children: ReactNode }) {

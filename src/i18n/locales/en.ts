@@ -17,6 +17,7 @@ export const en: Translations = {
   },
   hero: {
     greeting: "Hi, I'm {{name}}",
+    name: 'Ivan',
     tagline: 'Software Developer',
     bio: 'Building VPN & backend solutions with .NET and Python. Native clients, Dockerized infrastructure, monitoring dashboards, and Telegram integrations.',
     viewProjects: 'View projects',
@@ -78,6 +79,9 @@ export const en: Translations = {
     links: {
       github: 'GitHub',
       linkedin: 'LinkedIn',
+      instagram: 'Instagram',
+      twitter: 'X (Twitter)',
+      facebook: 'Facebook',
       datagate: 'DataGate',
       rackot: 'Rackot',
       coffee: 'Buy me a coffee',

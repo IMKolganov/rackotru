@@ -1,4 +1,4 @@
-import { profile } from '../data/profile'
+import { heroCards, profile } from '../data/profile'
 import { useI18n } from '../i18n/I18nContext'
 
 export default function Hero() {
@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="hero__content">
         <p className="eyebrow">@{profile.handle}</p>
         <h1 className="hero__title">
-          {format(t.hero.greeting, { name: profile.name })}
+          {format(t.hero.greeting, { name: t.hero.name })}
           <br />
           <span className="gradient-text">{t.hero.tagline}</span>
         </h1>
@@ -51,11 +51,17 @@ export default function Hero() {
             height={280}
           />
         </div>
-        <div className="hero__card hero__card--top">
-          <span className="mono">OpenVPN</span>
-          <span className="hero__card-dot" />
-        </div>
-        <div className="hero__card hero__card--bottom">
+        {heroCards.map((card, index) => (
+          <div
+            key={card.label}
+            className={`hero__card hero__card--${card.position}`}
+            style={{ animationDelay: `${-index * 1.2}s` }}
+          >
+            <span className="mono">{card.label}</span>
+            {card.active && <span className="hero__card-dot" />}
+          </div>
+        ))}
+        <div className="hero__card hero__card--bottom-left" style={{ animationDelay: '-3s' }}>
           <span className="mono">{t.hero.cardStack}</span>
         </div>
       </div>

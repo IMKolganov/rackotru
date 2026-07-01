@@ -1,6 +1,5 @@
 import { LOCALE_CODES, type LocaleCode, type Translations } from './types'
 import { en } from './locales/en'
-import type { PartialTranslations } from './locales/partial'
 
 const STORAGE_KEY = 'rackotru-locale'
 
@@ -78,8 +77,8 @@ export function interpolate(
 
 export function buildTranslations(
   locale: LocaleCode,
-  overrides: PartialTranslations,
+  overrides: Partial<Translations>,
 ): Translations {
   if (locale === 'en') return en
-  return deepMerge(en, overrides as Partial<Translations>)
+  return deepMerge(en, overrides)
 }

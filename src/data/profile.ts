@@ -6,13 +6,35 @@ export interface Project {
   featured?: boolean
 }
 
-export type ProfileLinkKey = 'github' | 'linkedin' | 'datagate' | 'rackot' | 'coffee'
+export type ProfileLinkKey =
+  | 'github'
+  | 'linkedin'
+  | 'instagram'
+  | 'twitter'
+  | 'facebook'
+  | 'datagate'
+  | 'rackot'
+  | 'coffee'
 
 export interface ProfileLink {
   key: ProfileLinkKey
   url: string
-  icon: 'github' | 'linkedin' | 'globe' | 'coffee'
+  icon: 'github' | 'linkedin' | 'instagram' | 'twitter' | 'facebook' | 'globe' | 'coffee'
 }
+
+export interface HeroCard {
+  label: string
+  position: 'top-right' | 'top-left' | 'bottom-left' | 'bottom-right' | 'mid-right' | 'mid-left'
+  active?: boolean
+}
+
+export const heroCards: HeroCard[] = [
+  { label: 'OpenVPN', position: 'top-right', active: true },
+  { label: 'XRay', position: 'top-left', active: true },
+  { label: 'DataGate', position: 'mid-right' },
+  { label: 'Docker', position: 'mid-left' },
+  { label: 'Telegram', position: 'bottom-right' },
+]
 
 export const profile = {
   name: 'Ivan',
@@ -29,6 +51,9 @@ export const profile = {
   links: [
     { key: 'github', url: 'https://github.com/IMKolganov', icon: 'github' },
     { key: 'linkedin', url: 'https://www.linkedin.com/in/imkolganov', icon: 'linkedin' },
+    { key: 'instagram', url: 'https://www.instagram.com/imkolganov/', icon: 'instagram' },
+    { key: 'twitter', url: 'https://x.com/imkolganov', icon: 'twitter' },
+    { key: 'facebook', url: 'https://www.facebook.com/IMKolganov', icon: 'facebook' },
     { key: 'datagate', url: 'https://datagateapp.com', icon: 'globe' },
     { key: 'rackot', url: 'https://rackot.ru', icon: 'globe' },
     { key: 'coffee', url: 'https://buymeacoffee.com/imkolganov', icon: 'coffee' },

@@ -5,6 +5,9 @@ import { useI18n } from '../i18n/I18nContext'
 const icons: Record<string, string> = {
   github: '⌘',
   linkedin: 'in',
+  instagram: 'IG',
+  twitter: 'X',
+  facebook: 'f',
   globe: '↗',
   coffee: '☕',
 }

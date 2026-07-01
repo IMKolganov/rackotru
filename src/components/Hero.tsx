@@ -1,5 +1,6 @@
 import { heroCards, profile } from '../data/profile'
 import { useI18n } from '../i18n/I18nContext'
+import ScrollLink from './ScrollLink'
 
 export default function Hero() {
   const { t, format } = useI18n()
@@ -19,12 +20,12 @@ export default function Hero() {
           <span className="pill">{profile.location}</span>
         </div>
         <div className="hero__actions">
-          <a href="#projects" className="btn btn--primary">
+          <ScrollLink to="projects" className="btn btn--primary">
             {t.hero.viewProjects}
-          </a>
-          <a href="#contact" className="btn btn--ghost">
+          </ScrollLink>
+          <ScrollLink to="contact" className="btn btn--ghost">
             {t.hero.getInTouch}
-          </a>
+          </ScrollLink>
         </div>
         <dl className="hero__stats">
           <div>

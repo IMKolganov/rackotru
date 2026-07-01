@@ -1,4 +1,4 @@
-import { LOCALE_CODES, type LocaleCode, type Translations } from './types'
+import { LOCALE_CODES, type DeepPartial, type LocaleCode, type Translations } from './types'
 import { en } from './locales/en'
 
 const STORAGE_KEY = 'rackotru-locale'
@@ -38,7 +38,7 @@ export function saveLocale(locale: LocaleCode): void {
   }
 }
 
-export function deepMerge<T extends object>(base: T, patch: Partial<T>): T {
+export function deepMerge<T extends object>(base: T, patch: DeepPartial<T>): T {
   const result = { ...base }
 
   for (const key of Object.keys(patch) as (keyof T)[]) {
@@ -77,7 +77,7 @@ export function interpolate(
 
 export function buildTranslations(
   locale: LocaleCode,
-  overrides: Partial<Translations>,
+  overrides: DeepPartial<Translations>,
 ): Translations {
   if (locale === 'en') return en
   return deepMerge(en, overrides)

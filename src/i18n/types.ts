@@ -7,6 +7,10 @@ export const LOCALE_CODES = [
 
 export type LocaleCode = (typeof LOCALE_CODES)[number]
 
+export type DeepPartial<T> = {
+  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P]
+}
+
 export const LOCALE_LABELS: Record<LocaleCode, string> = {
   en: 'English',
   ru: 'Русский',
@@ -61,6 +65,8 @@ export interface Translations {
     contact: string
     github: string
     language: string
+    switchToLight: string
+    switchToDark: string
     mainNav: string
   }
   hero: {
@@ -104,13 +110,13 @@ export interface Translations {
       instagram: string
       twitter: string
       facebook: string
+      telegram: string
       datagate: string
       rackot: string
       coffee: string
     }
   }
   footer: {
-    builtWith: string
     source: string
   }
 }

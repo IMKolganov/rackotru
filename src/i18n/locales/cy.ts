@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const cy: Partial<Translations> = {
+export const cy: DeepPartial<Translations> = {
     meta: {
       title: 'Ivan Kolganov · Datblygwr meddalwedd',
       description: 'Ivan Kolganov — datblygwr datrysiadau VPN a backend gyda .NET a Python.',
@@ -12,6 +12,8 @@ export const cy: Partial<Translations> = {
       contact: 'Cysylltu',
       github: 'GitHub',
       language: 'Iaith',
+      switchToLight: 'Switch to light theme',
+      switchToDark: 'Switch to dark theme',
       mainNav: 'Prif lywio',
     },
     hero: {
@@ -29,7 +31,6 @@ export const cy: Partial<Translations> = {
     about: {
       eyebrow: 'Amdanaf',
       title: 'Beth rwy\'n ei adeiladu',
-      lead: 'Datblygwr yn {{location}}, yn {{company}}. Canolbwyntio ar gynhyrchion rhwydwaith diogel — o gleientiaid VPN i seilwaith cynhwysydd.',
       highlights: [
         'Cleientiaid VPN traws-blatfform (Windows, macOS, Linux, iOS, Android)',
         'Gweinyddion OpenVPN Docker gyda API .NET',
@@ -72,6 +73,7 @@ export const cy: Partial<Translations> = {
         linkedin: 'LinkedIn',
         instagram: 'Instagram',
         twitter: 'X (Twitter)',
+        telegram: '@KolganovIvan',
         facebook: 'Facebook',
         datagate: 'DataGate',
         rackot: 'Rackot',
@@ -79,7 +81,6 @@ export const cy: Partial<Translations> = {
       },
     },
     footer: {
-      builtWith: 'Wedi\'i adeiladu gyda React a Vite',
       source: 'Cod ffynhonnell ar GitHub',
     },
   }

@@ -1,3 +1,6 @@
+# Local FTP/hosting backups
+backups/
+
 # Dependencies
 node_modules/
 

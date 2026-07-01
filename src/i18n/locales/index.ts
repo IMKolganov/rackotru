@@ -1,4 +1,4 @@
-import type { LocaleCode, Translations } from '../types'
+import type { DeepPartial, LocaleCode, Translations } from '../types'
 import { deepMerge } from '../utils'
 import { en } from './en'
 import { ru } from './ru'
@@ -40,7 +40,7 @@ import { lb } from './lb'
 import { cy } from './cy'
 import { tr } from './tr'
 
-export const localeOverrides: Record<LocaleCode, Partial<Translations>> = {
+export const localeOverrides: Record<LocaleCode, DeepPartial<Translations>> = {
   en: {},
   ru,
   de,

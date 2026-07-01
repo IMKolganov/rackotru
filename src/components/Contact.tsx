@@ -1,16 +1,7 @@
 import { profile } from '../data/profile'
 import type { ProfileLinkKey } from '../data/profile'
 import { useI18n } from '../i18n/I18nContext'
-
-const icons: Record<string, string> = {
-  github: '⌘',
-  linkedin: 'in',
-  instagram: 'IG',
-  twitter: 'X',
-  facebook: 'f',
-  globe: '↗',
-  coffee: '☕',
-}
+import ContactIcon from './ContactIcon'
 
 export default function Contact() {
   const { t } = useI18n()
@@ -33,7 +24,7 @@ export default function Contact() {
               rel="noreferrer"
             >
               <span className="contact-link__icon" aria-hidden="true">
-                {icons[link.icon]}
+                <ContactIcon name={link.icon} />
               </span>
               <span>{t.contact.links[link.key as ProfileLinkKey]}</span>
             </a>

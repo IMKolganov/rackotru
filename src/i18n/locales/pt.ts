@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const pt: Partial<Translations> = {
+export const pt: DeepPartial<Translations> = {
     meta: {
       title: 'Ivan Kolganov · Desenvolvedor de software',
       description: 'Ivan Kolganov — desenvolvedor de soluções VPN e backend com .NET e Python.',
@@ -12,6 +12,8 @@ export const pt: Partial<Translations> = {
       contact: 'Contacto',
       github: 'GitHub',
       language: 'Idioma',
+      switchToLight: 'Switch to light theme',
+      switchToDark: 'Switch to dark theme',
       mainNav: 'Navegação principal',
     },
     hero: {
@@ -29,7 +31,6 @@ export const pt: Partial<Translations> = {
     about: {
       eyebrow: 'Sobre',
       title: 'O que construo',
-      lead: 'Desenvolvedor em {{location}}, na {{company}}. Foco em produtos de rede seguros — de clientes VPN nativos a infraestrutura em contentores.',
       highlights: [
         'Clientes VPN multiplataforma (Windows, macOS, Linux, iOS, Android)',
         'Servidores OpenVPN dockerizados com APIs .NET',
@@ -72,6 +73,7 @@ export const pt: Partial<Translations> = {
         linkedin: 'LinkedIn',
         instagram: 'Instagram',
         twitter: 'X (Twitter)',
+        telegram: '@KolganovIvan',
         facebook: 'Facebook',
         datagate: 'DataGate',
         rackot: 'Rackot',
@@ -79,7 +81,6 @@ export const pt: Partial<Translations> = {
       },
     },
     footer: {
-      builtWith: 'Feito com React e Vite',
       source: 'Código no GitHub',
     },
   }

@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const tr: Partial<Translations> = {
+export const tr: DeepPartial<Translations> = {
     meta: {
       title: 'Ivan Kolganov · Yazılım Geliştirici',
       description: 'Ivan Kolganov — .NET ve Python ile VPN ve backend çözümleri geliştiricisi.',
@@ -12,6 +12,8 @@ export const tr: Partial<Translations> = {
       contact: 'İletişim',
       github: 'GitHub',
       language: 'Dil',
+      switchToLight: 'Switch to light theme',
+      switchToDark: 'Switch to dark theme',
       mainNav: 'Ana navigasyon',
     },
     hero: {
@@ -29,7 +31,6 @@ export const tr: Partial<Translations> = {
     about: {
       eyebrow: 'Hakkımda',
       title: 'Neler inşa ediyorum',
-      lead: '{{location}}\'da, {{company}} bünyesinde geliştirici. Güvenli ağ ürünlerine odaklanıyorum — VPN istemcilerinden konteyner altyapısına.',
       highlights: [
         'Çok platformlu VPN istemcileri (Windows, macOS, Linux, iOS, Android)',
         'Docker OpenVPN sunucuları .NET API ile',
@@ -72,6 +73,7 @@ export const tr: Partial<Translations> = {
         linkedin: 'LinkedIn',
         instagram: 'Instagram',
         twitter: 'X (Twitter)',
+        telegram: '@KolganovIvan',
         facebook: 'Facebook',
         datagate: 'DataGate',
         rackot: 'Rackot',
@@ -79,7 +81,6 @@ export const tr: Partial<Translations> = {
       },
     },
     footer: {
-      builtWith: 'React ve Vite ile yapıldı',
       source: 'Kaynak kod GitHub\'da',
     },
   }

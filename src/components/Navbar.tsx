@@ -1,4 +1,5 @@
 import { useI18n } from '../i18n/I18nContext'
+import ThemeToggle from './ThemeToggle'
 import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
@@ -25,6 +26,7 @@ export default function Navbar() {
         ))}
       </nav>
       <div className="nav__actions">
+        <ThemeToggle />
         <LanguageSwitcher />
         <a
           href="https://github.com/IMKolganov"

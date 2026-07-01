@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const ru: Partial<Translations> = {
+export const ru: DeepPartial<Translations> = {
     meta: {
       title: 'Иван Колганов · Разработчик ПО',
       description: 'Иван Колганов — разработчик ПО, создающий VPN- и backend-решения на .NET и Python.',
@@ -12,6 +12,8 @@ export const ru: Partial<Translations> = {
       contact: 'Контакты',
       github: 'GitHub',
       language: 'Язык',
+      switchToLight: 'Светлая тема',
+      switchToDark: 'Тёмная тема',
       mainNav: 'Основная навигация',
     },
     hero: {
@@ -29,7 +31,7 @@ export const ru: Partial<Translations> = {
     about: {
       eyebrow: 'Обо мне',
       title: 'Чем я занимаюсь',
-      lead: 'Я разработчик ПО из {{location}}, работаю в {{company}}. Специализируюсь на безопасных сетевых продуктах — от нативных VPN-клиентов до контейнеризированной серверной инфраструктуры и инструментов мониторинга.',
+      lead: 'Я разработчик ПО из {{location}}. {{team}} — моя команда разработчиков для некоммерческих проектов; иногда мы вместе делаем совместные наработки. Специализируюсь на безопасных сетевых продуктах — от нативных VPN-клиентов до контейнеризированной серверной инфраструктуры и инструментов мониторинга.',
       highlights: [
         'Кроссплатформенные VPN-клиенты (Windows, macOS, Linux, iOS, Android)',
         'Docker-развёртывания OpenVPN-серверов с .NET API управления',
@@ -73,13 +75,13 @@ export const ru: Partial<Translations> = {
       instagram: 'Instagram',
       twitter: 'X (Twitter)',
       facebook: 'Facebook',
+      telegram: '@KolganovIvan',
       datagate: 'DataGate',
-      rackot: 'Rackot',
+      rackot: 'Rackot production',
       coffee: 'Угостить кофе',
     },
     },
     footer: {
-      builtWith: 'Собрано на React и Vite',
       source: 'Исходники на GitHub',
     },
   }

@@ -15,7 +15,7 @@ export default function Hero() {
         </h1>
         <p className="hero__bio">{t.hero.bio}</p>
         <div className="hero__meta">
-          <span className="pill">{profile.company}</span>
+          <span className="pill">{profile.team}</span>
           <span className="pill">{profile.location}</span>
         </div>
         <div className="hero__actions">

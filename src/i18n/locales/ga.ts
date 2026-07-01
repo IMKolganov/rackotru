@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const ga: Partial<Translations> = {
+export const ga: DeepPartial<Translations> = {
     meta: {
       title: 'Ivan Kolganov · Forbróir bogearraí',
       description: 'Ivan Kolganov — forbróir réitigh VPN agus backend le .NET agus Python.',
@@ -12,6 +12,8 @@ export const ga: Partial<Translations> = {
       contact: 'Teagmháil',
       github: 'GitHub',
       language: 'Teanga',
+      switchToLight: 'Switch to light theme',
+      switchToDark: 'Switch to dark theme',
       mainNav: 'Príomh-nascleanúint',
     },
     hero: {
@@ -29,7 +31,6 @@ export const ga: Partial<Translations> = {
     about: {
       eyebrow: 'Fúm',
       title: 'Cad a thógaim',
-      lead: 'Forbróir i {{location}}, ag {{company}}. Dírithe ar tháirgí líonra slána — ó chliaint VPN go bonneagar coimeádáin.',
       highlights: [
         'Cliaint VPN tras-ardán (Windows, macOS, Linux, iOS, Android)',
         'Freastalaithe OpenVPN Docker le APIanna .NET',
@@ -72,6 +73,7 @@ export const ga: Partial<Translations> = {
         linkedin: 'LinkedIn',
         instagram: 'Instagram',
         twitter: 'X (Twitter)',
+        telegram: '@KolganovIvan',
         facebook: 'Facebook',
         datagate: 'DataGate',
         rackot: 'Rackot',
@@ -79,7 +81,6 @@ export const ga: Partial<Translations> = {
       },
     },
     footer: {
-      builtWith: 'Tógtha le React & Vite',
       source: 'Foinse ar GitHub',
     },
   }

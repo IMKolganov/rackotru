@@ -12,6 +12,7 @@ export type ProfileLinkKey =
   | 'instagram'
   | 'twitter'
   | 'facebook'
+  | 'telegram'
   | 'datagate'
   | 'rackot'
   | 'coffee'
@@ -19,7 +20,7 @@ export type ProfileLinkKey =
 export interface ProfileLink {
   key: ProfileLinkKey
   url: string
-  icon: 'github' | 'linkedin' | 'instagram' | 'twitter' | 'facebook' | 'globe' | 'coffee'
+  icon: 'github' | 'linkedin' | 'instagram' | 'twitter' | 'facebook' | 'telegram' | 'globe' | 'coffee'
 }
 
 export interface HeroCard {
@@ -40,8 +41,9 @@ export const profile = {
   name: 'Ivan',
   fullName: 'Ivan Kolganov',
   handle: 'IMKolganov',
-  company: 'Rackot production',
+  team: 'Rackot production',
   location: 'Cyprus',
+  siteSinceYear: 2014,
   avatar: 'https://avatars.githubusercontent.com/u/110064602?v=4',
   stats: {
     repos: 70,
@@ -54,6 +56,7 @@ export const profile = {
     { key: 'instagram', url: 'https://www.instagram.com/imkolganov/', icon: 'instagram' },
     { key: 'twitter', url: 'https://x.com/imkolganov', icon: 'twitter' },
     { key: 'facebook', url: 'https://www.facebook.com/IMKolganov', icon: 'facebook' },
+    { key: 'telegram', url: 'https://t.me/KolganovIvan', icon: 'telegram' },
     { key: 'datagate', url: 'https://datagateapp.com', icon: 'globe' },
     { key: 'rackot', url: 'https://rackot.ru', icon: 'globe' },
     { key: 'coffee', url: 'https://buymeacoffee.com/imkolganov', icon: 'coffee' },

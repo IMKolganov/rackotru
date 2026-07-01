@@ -1,6 +1,6 @@
-import type { Translations } from '../types'
+import type { DeepPartial, Translations } from '../types'
 
-export const et: Partial<Translations> = {
+export const et: DeepPartial<Translations> = {
     meta: {
       title: 'Ivan Kolganov · Tarkvaraarendaja',
       description: 'Ivan Kolganov — VPN ja backend lahenduste arendaja .NET ja Pythoniga.',
@@ -12,6 +12,8 @@ export const et: Partial<Translations> = {
       contact: 'Kontakt',
       github: 'GitHub',
       language: 'Keel',
+      switchToLight: 'Switch to light theme',
+      switchToDark: 'Switch to dark theme',
       mainNav: 'Peamine navigatsioon',
     },
     hero: {
@@ -29,7 +31,6 @@ export const et: Partial<Translations> = {
     about: {
       eyebrow: 'Minust',
       title: 'Mida ma ehitan',
-      lead: 'Arendaja {{location}}st, {{company}} juures. Keskendun turvalistele võrgutoodetele — VPN klientidest konteineriseeritud infrastruktuurini.',
       highlights: [
         'Mitme platvormi VPN kliendid (Windows, macOS, Linux, iOS, Android)',
         'Docker OpenVPN serverid .NET API-ga',
@@ -72,6 +73,7 @@ export const et: Partial<Translations> = {
         linkedin: 'LinkedIn',
         instagram: 'Instagram',
         twitter: 'X (Twitter)',
+        telegram: '@KolganovIvan',
         facebook: 'Facebook',
         datagate: 'DataGate',
         rackot: 'Rackot',
@@ -79,7 +81,6 @@ export const et: Partial<Translations> = {
       },
     },
     footer: {
-      builtWith: 'Tehtud Reacti ja Vitega',
       source: 'Lähtekood GitHubis',
     },
   }

@@ -13,6 +13,8 @@ export const en: Translations = {
     contact: 'Contact',
     github: 'GitHub',
     language: 'Language',
+    switchToLight: 'Switch to light theme',
+    switchToDark: 'Switch to dark theme',
     mainNav: 'Main navigation',
   },
   hero: {
@@ -30,7 +32,7 @@ export const en: Translations = {
   about: {
     eyebrow: 'About',
     title: 'What I build',
-    lead: "I'm a software developer based in {{location}}, working under {{company}}. I focus on secure networking products — from native VPN clients to containerized server infrastructure and monitoring tools.",
+    lead: "I'm a software developer based in {{location}}. I founded {{team}} — a developer team for non-commercial side projects, and we sometimes build things together. I focus on secure networking products — from native VPN clients to containerized server infrastructure and monitoring tools.",
     highlights: [
       'Cross-platform VPN clients (Windows, macOS, Linux, iOS, Android)',
       'Dockerized OpenVPN servers with .NET management APIs',
@@ -82,13 +84,13 @@ export const en: Translations = {
       instagram: 'Instagram',
       twitter: 'X (Twitter)',
       facebook: 'Facebook',
+      telegram: '@KolganovIvan',
       datagate: 'DataGate',
-      rackot: 'Rackot',
+      rackot: 'Rackot production',
       coffee: 'Buy me a coffee',
     },
   },
   footer: {
-    builtWith: 'Built with React & Vite',
     source: 'Source on GitHub',
   },
 }

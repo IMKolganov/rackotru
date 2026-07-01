@@ -14,7 +14,7 @@ export default function About() {
         <p className="about__lead">
           {format(t.about.lead, {
             location: profile.location,
-            company: profile.company,
+            team: profile.team,
           })}
         </p>
         <ul className="about__list">

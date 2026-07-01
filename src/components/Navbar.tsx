@@ -1,14 +1,13 @@
 import type { MouseEvent } from 'react'
 import { useI18n } from '../i18n/I18nContext'
+import { stripBareHash } from '../utils/url'
 import ThemeToggle from './ThemeToggle'
 import LanguageSwitcher from './LanguageSwitcher'
 
 function scrollToTop(event: MouseEvent) {
   event.preventDefault()
   window.scrollTo({ top: 0, behavior: 'smooth' })
-  if (window.location.hash) {
-    history.replaceState(null, '', window.location.pathname + window.location.search)
-  }
+  stripBareHash()
 }
 
 export default function Navbar() {

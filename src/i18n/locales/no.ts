@@ -82,5 +82,44 @@ export const no: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Kildekode på GitHub',
+      privacy: 'Personvern',
+    },
+    cookies: {
+      banner:
+        'Nettstedet bruker localStorage kun for språk og tema. Ingen analyse eller annonsesporing. Se personvernerklæringen.',
+      accept: 'Godta',
+      reject: 'Kun nødvendige',
+      privacy: 'Personvernerklæring',
+    },
+    privacy: {
+      title: 'Personvernerklæring',
+      updated: 'Sist oppdatert: juli 2026',
+      close: 'Lukk',
+      sections: {
+        controller: {
+          title: 'Behandlingsansvarlig',
+          body: 'Ivan Kolganov driver rackot.ru. For personvernhenvendelser: Telegram @KolganovIvan eller LinkedIn (lenker i Kontakt-seksjonen).',
+        },
+        data: {
+          title: 'Hvilke data behandles',
+          body: 'Statisk personlig nettside. Ingen brukerkontoer eller skjemaer. Hostinglogger kan inneholde IP-adresse, nettlesertype og tidspunkt — som ved vanlig webhosting.',
+        },
+        cookies: {
+          title: 'Informasjonskapsler og localStorage',
+          body: 'Hvis du godtar, lagres språk og tema i nettleseren (rackotru-locale, rackotru-theme, rackotru-consent). Kun funksjonelle innstillinger — ingen sporing. Med « Kun nødvendige » lagres ikke innstillinger mellom besøk.',
+        },
+        thirdParty: {
+          title: 'Tredjepartsinnhold',
+          body: 'Nettstedet laster profilbilde fra GitHub, fonter fra Google Fonts og lenker til eksterne tjenester. Disse leverandørene har egne personvernregler.',
+        },
+        rights: {
+          title: 'Dine rettigheter (GDPR)',
+          body: 'Du kan trekke tilbake samtykke ved å slette nettstedsdata i nettleseren eller velge « Kun nødvendige » ved neste besøk. Du har rett til innsyn, retting, sletting, begrensning eller protest, og til å klage til tilsynsmyndighet.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Spørsmål om denne erklæringen: Ivan Kolganov — @KolganovIvan på Telegram eller imkolganov på LinkedIn.',
+        },
+      },
     },
   }

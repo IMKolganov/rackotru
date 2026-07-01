@@ -82,5 +82,44 @@ export const ro: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Cod sursă pe GitHub',
+      privacy: 'Confidențialitate',
+    },
+    cookies: {
+      banner:
+        'Acest site folosește localStorage doar pentru limbă și temă. Fără analiză sau urmărire publicitară. Detalii în notificarea de confidențialitate.',
+      accept: 'Accept',
+      reject: 'Doar esențiale',
+      privacy: 'Notificare confidențialitate',
+    },
+    privacy: {
+      title: 'Notificare de confidențialitate',
+      updated: 'Ultima actualizare: iulie 2026',
+      close: 'Închide',
+      sections: {
+        controller: {
+          title: 'Operator de date',
+          body: 'Ivan Kolganov operează rackot.ru. Pentru solicitări privind confidențialitatea: Telegram @KolganovIvan sau LinkedIn (linkuri în secțiunea Contact).',
+        },
+        data: {
+          title: 'Ce date sunt prelucrate',
+          body: 'Site personal static. Fără conturi de utilizator sau formulare. Jurnalele de hosting pot include IP, tip de browser și ora cererii — ca la un hosting web obișnuit.',
+        },
+        cookies: {
+          title: 'Cookie-uri și localStorage',
+          body: 'Dacă acceptați, limba și tema sunt salvate în browser (rackotru-locale, rackotru-theme, rackotru-consent). Doar preferințe funcționale — fără urmărire. Cu « Doar esențiale », preferințele nu se salvează între vizite.',
+        },
+        thirdParty: {
+          title: 'Conținut terț',
+          body: 'Site-ul încarcă o fotografie de profil de pe GitHub, fonturi Google Fonts și linkuri către servicii externe. Acești furnizori au propriile politici de confidențialitate.',
+        },
+        rights: {
+          title: 'Drepturile dvs. (GDPR)',
+          body: 'Puteți retrage consimțământul ștergând datele site-ului din browser sau alegând « Doar esențiale » la următoarea vizită. Aveți dreptul de acces, rectificare, ștergere, restricționare sau opoziție și de a depune plângere la autoritatea de supraveghere.',
+        },
+        contact: {
+          title: 'Contact',
+          body: 'Întrebări despre această notificare: Ivan Kolganov — @KolganovIvan pe Telegram sau imkolganov pe LinkedIn.',
+        },
+      },
     },
   }

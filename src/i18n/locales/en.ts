@@ -92,5 +92,44 @@ export const en: Translations = {
   },
   footer: {
     source: 'Source on GitHub',
+    privacy: 'Privacy',
+  },
+  cookies: {
+    banner:
+      'This site uses browser local storage for language and theme preferences only. No analytics or ad tracking. See the privacy notice for details.',
+    accept: 'Accept',
+    reject: 'Essential only',
+    privacy: 'Privacy notice',
+  },
+  privacy: {
+    title: 'Privacy notice',
+    updated: 'Last updated: July 2026',
+    close: 'Close',
+    sections: {
+      controller: {
+        title: 'Data controller',
+        body: 'Ivan Kolganov operates rackot.ru. For privacy requests contact me via Telegram @KolganovIvan or LinkedIn (links in the Contact section).',
+      },
+      data: {
+        title: 'What data is processed',
+        body: 'This is a static personal website. I do not operate user accounts or collect form submissions. Server logs at the hosting provider may include IP address, browser type, and request time as part of normal web hosting.',
+      },
+      cookies: {
+        title: 'Cookies & local storage',
+        body: 'If you accept, the site stores your language and theme choice in your browser (localStorage keys rackotru-locale, rackotru-theme, rackotru-consent). These are functional preferences only — not used for tracking or profiling. If you choose “Essential only”, preferences are not saved between visits.',
+      },
+      thirdParty: {
+        title: 'Third-party content',
+        body: 'The site loads a profile photo from GitHub, fonts from Google Fonts, and links to external services (GitHub, social networks, etc.). Those providers have their own privacy policies when you visit them.',
+      },
+      rights: {
+        title: 'Your rights (GDPR)',
+        body: 'You may withdraw consent at any time by clearing site data in your browser or choosing “Essential only” on your next visit. You have the right to access, rectify, erase, restrict, or object to processing where applicable, and to lodge a complaint with your supervisory authority.',
+      },
+      contact: {
+        title: 'Contact',
+        body: 'Questions about this notice: Ivan Kolganov — @KolganovIvan on Telegram or imkolganov on LinkedIn.',
+      },
+    },
   },
 }

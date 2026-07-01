@@ -82,5 +82,44 @@ export const sv: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Källkod på GitHub',
+      privacy: 'Integritet',
+    },
+    cookies: {
+      banner:
+        'Webbplatsen använder localStorage endast för språk och tema. Ingen analys eller annonsspårning. Se integritetsmeddelandet.',
+      accept: 'Acceptera',
+      reject: 'Endast nödvändiga',
+      privacy: 'Integritetsmeddelande',
+    },
+    privacy: {
+      title: 'Integritetsmeddelande',
+      updated: 'Senast uppdaterad: juli 2026',
+      close: 'Stäng',
+      sections: {
+        controller: {
+          title: 'Personuppgiftsansvarig',
+          body: 'Ivan Kolganov driver rackot.ru. För integritetsfrågor: Telegram @KolganovIvan eller LinkedIn (länkar i avsnittet Kontakt).',
+        },
+        data: {
+          title: 'Vilka uppgifter behandlas',
+          body: 'Statisk personlig webbplats. Inga användarkonton eller formulär. Värdloggar kan innehålla IP-adress, webbläsartyp och tidpunkt — som vid normal webbhosting.',
+        },
+        cookies: {
+          title: 'Cookies och localStorage',
+          body: 'Om du accepterar sparas språk och tema i webbläsaren (rackotru-locale, rackotru-theme, rackotru-consent). Endast funktionella inställningar — ingen spårning. Med « Endast nödvändiga » sparas inte inställningar mellan besök.',
+        },
+        thirdParty: {
+          title: 'Innehåll från tredje part',
+          body: 'Webbplatsen laddar profilbild från GitHub, typsnitt från Google Fonts och länkar till externa tjänster. Dessa leverantörer har egna integritetspolicyer.',
+        },
+        rights: {
+          title: 'Dina rättigheter (GDPR)',
+          body: 'Du kan återkalla samtycke genom att rensa webbplatsdata i webbläsaren eller välja « Endast nödvändiga » vid nästa besök. Du har rätt till tillgång, rättelse, radering, begränsning eller invändning, och att klaga hos tillsynsmyndighet.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Frågor om detta meddelande: Ivan Kolganov — @KolganovIvan på Telegram eller imkolganov på LinkedIn.',
+        },
+      },
     },
   }

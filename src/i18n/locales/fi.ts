@@ -82,5 +82,44 @@ export const fi: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Lähdekoodi GitHubissa',
+      privacy: 'Tietosuoja',
+    },
+    cookies: {
+      banner:
+        'Sivusto käyttää localStoragea vain kieleen ja teemaan. Ei analytiikkaa tai mainosseurantaa. Katso tietosuojailmoitus.',
+      accept: 'Hyväksy',
+      reject: 'Vain välttämättömät',
+      privacy: 'Tietosuojailmoitus',
+    },
+    privacy: {
+      title: 'Tietosuojailmoitus',
+      updated: 'Päivitetty: heinäkuu 2026',
+      close: 'Sulje',
+      sections: {
+        controller: {
+          title: 'Rekisterinpitäjä',
+          body: 'Ivan Kolganov ylläpitää rackot.ru-sivustoa. Tietosuojapyynnöt: Telegram @KolganovIvan tai LinkedIn (linkit Ota yhteyttä -osiossa).',
+        },
+        data: {
+          title: 'Mitä tietoja käsitellään',
+          body: 'Staattinen henkilökohtainen sivusto. Ei käyttäjätilejä tai lomakkeita. Hosting-lokit voivat sisältää IP-osoitteen, selaintyypin ja pyyntöajan — kuten tavallisessa webhostingissa.',
+        },
+        cookies: {
+          title: 'Evästeet ja localStorage',
+          body: 'Hyväksyessäsi kieli ja teema tallennetaan selaimeen (rackotru-locale, rackotru-theme, rackotru-consent). Vain toiminnalliset asetukset — ei seurantaa. « Vain välttämättömät » -valinnalla asetuksia ei tallenneta käyntien välillä.',
+        },
+        thirdParty: {
+          title: 'Kolmannen osapuolen sisältö',
+          body: 'Sivusto lataa profiilikuvan GitHubista, fontit Google Fontsista ja linkkejä ulkoisiin palveluihin. Näillä palveluntarjoajilla on omat tietosuojakäytäntönsä.',
+        },
+        rights: {
+          title: 'Oikeutesi (GDPR)',
+          body: 'Voit peruuttaa suostumuksen poistamalla sivuston tiedot selaimesta tai valitsemalla « Vain välttämättömät » seuraavalla käynnillä. Sinulla on oikeus tarkastaa, oikaista, poistaa, rajoittaa tai vastustaa käsittelyä ja tehdä valitus valvontaviranomaiselle.',
+        },
+        contact: {
+          title: 'Yhteystiedot',
+          body: 'Kysymykset tästä ilmoituksesta: Ivan Kolganov — @KolganovIvan Telegramissa tai imkolganov LinkedInissä.',
+        },
+      },
     },
   }

@@ -82,5 +82,44 @@ export const de: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Quellcode auf GitHub',
+      privacy: 'Datenschutz',
+    },
+    cookies: {
+      banner:
+        'Diese Website nutzt localStorage nur für Sprache und Theme. Keine Analyse- oder Werbe-Tracking. Details in der Datenschutzerklärung.',
+      accept: 'Akzeptieren',
+      reject: 'Nur notwendige',
+      privacy: 'Datenschutzerklärung',
+    },
+    privacy: {
+      title: 'Datenschutzerklärung',
+      updated: 'Zuletzt aktualisiert: Juli 2026',
+      close: 'Schließen',
+      sections: {
+        controller: {
+          title: 'Verantwortlicher',
+          body: 'Ivan Kolganov betreibt rackot.ru. Datenschutzanfragen: Telegram @KolganovIvan oder LinkedIn (Links im Abschnitt Kontakt).',
+        },
+        data: {
+          title: 'Welche Daten verarbeitet werden',
+          body: 'Dies ist eine statische persönliche Website. Es gibt keine Benutzerkonten und keine Formulare. Server-Logs beim Hoster können IP-Adresse, Browsertyp und Anfragezeit enthalten — wie bei normalem Webhosting.',
+        },
+        cookies: {
+          title: 'Cookies & localStorage',
+          body: 'Bei Zustimmung werden Sprache und Theme im Browser gespeichert (rackotru-locale, rackotru-theme, rackotru-consent). Das sind funktionale Einstellungen — kein Tracking. Bei „Nur notwendige“ werden Einstellungen zwischen Besuchen nicht gespeichert.',
+        },
+        thirdParty: {
+          title: 'Drittanbieter-Inhalte',
+          body: 'Die Seite lädt ein Profilfoto von GitHub, Schriften von Google Fonts und verlinkt externe Dienste. Diese Anbieter haben eigene Datenschutzrichtlinien.',
+        },
+        rights: {
+          title: 'Ihre Rechte (DSGVO)',
+          body: 'Sie können die Einwilligung jederzeit widerrufen, indem Sie Website-Daten im Browser löschen oder beim nächsten Besuch „Nur notwendige“ wählen. Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch sowie auf Beschwerde bei einer Aufsichtsbehörde.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Fragen zu dieser Erklärung: Ivan Kolganov — @KolganovIvan auf Telegram oder imkolganov auf LinkedIn.',
+        },
+      },
     },
   }

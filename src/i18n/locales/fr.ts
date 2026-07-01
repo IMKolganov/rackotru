@@ -82,5 +82,44 @@ export const fr: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Code source sur GitHub',
+      privacy: 'Confidentialité',
+    },
+    cookies: {
+      banner:
+        'Ce site utilise le localStorage uniquement pour la langue et le thème. Pas d’analyse ni de suivi publicitaire. Voir l’avis de confidentialité.',
+      accept: 'Accepter',
+      reject: 'Essentiels uniquement',
+      privacy: 'Avis de confidentialité',
+    },
+    privacy: {
+      title: 'Avis de confidentialité',
+      updated: 'Dernière mise à jour : juillet 2026',
+      close: 'Fermer',
+      sections: {
+        controller: {
+          title: 'Responsable du traitement',
+          body: 'Ivan Kolganov exploite rackot.ru. Pour les demandes de confidentialité : Telegram @KolganovIvan ou LinkedIn (liens dans la section Contact).',
+        },
+        data: {
+          title: 'Données traitées',
+          body: 'Site personnel statique. Pas de comptes utilisateurs ni de formulaires. Les journaux de l’hébergeur peuvent inclure l’adresse IP, le type de navigateur et l’heure de la requête — comme pour un hébergement web classique.',
+        },
+        cookies: {
+          title: 'Cookies et localStorage',
+          body: 'Si vous acceptez, la langue et le thème sont enregistrés dans le navigateur (rackotru-locale, rackotru-theme, rackotru-consent). Préférences fonctionnelles uniquement — pas de suivi. Avec « Essentiels uniquement », les préférences ne sont pas conservées entre les visites.',
+        },
+        thirdParty: {
+          title: 'Contenu tiers',
+          body: 'Le site charge une photo de profil depuis GitHub, des polices Google Fonts et propose des liens vers des services externes. Ces fournisseurs ont leurs propres politiques de confidentialité.',
+        },
+        rights: {
+          title: 'Vos droits (RGPD)',
+          body: 'Vous pouvez retirer votre consentement en effaçant les données du site dans le navigateur ou en choisissant « Essentiels uniquement » lors de votre prochaine visite. Vous avez le droit d’accès, de rectification, d’effacement, de limitation ou d’opposition, et de déposer une plainte auprès de votre autorité de contrôle.',
+        },
+        contact: {
+          title: 'Contact',
+          body: 'Questions sur cet avis : Ivan Kolganov — @KolganovIvan sur Telegram ou imkolganov sur LinkedIn.',
+        },
+      },
     },
   }

@@ -82,5 +82,44 @@ export const lb: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Quellcode op GitHub',
+      privacy: 'Dateschutz',
+    },
+    cookies: {
+      banner:
+        'Dës Säit benotzt localStorage nëmmen fir Sprooch a Theme. Keng Analys oder Reklamm-Tracking. Detailer an der Dateschutzerklärung.',
+      accept: 'Acceptéieren',
+      reject: 'Nëmmen néideg',
+      privacy: 'Dateschutzerklärung',
+    },
+    privacy: {
+      title: 'Dateschutzerklärung',
+      updated: 'Lescht Aktualiséierung: Juli 2026',
+      close: 'Zoumaachen',
+      sections: {
+        controller: {
+          title: 'Verantwortlechen',
+          body: 'Ivan Kolganov bedreift rackot.ru. Fir Dateschutz-Ufroen: Telegram @KolganovIvan oder LinkedIn (Linken am Kontakt-Beräich).',
+        },
+        data: {
+          title: 'Wéi eng Donnéeë ginn veraarbecht',
+          body: 'Statesch perséinlech Websäit. Keng Benotzerkonten oder Formularen. Server-Logs beim Hosting kënnen IP, Browser-Typ an Ufrozäit enthalen — wéi bei normalem Webhosting.',
+        },
+        cookies: {
+          title: 'Cookies & localStorage',
+          body: 'Wann Dir acceptéiert, ginn Sprooch a Theme am Browser gespäichert (rackotru-locale, rackotru-theme, rackotru-consent). Nëmmen funktionell Preferenzen — kee Tracking. Bei « Nëmmen néideg » ginn Preferenzen net tëscht Visite gespäichert.',
+        },
+        thirdParty: {
+          title: 'Drëtt-Ubidder-Inhalt',
+          body: 'D\'Säit luet e Profilfoto vu GitHub, Schrëften vu Google Fonts a Linken op extern Servicer. Dës Ubidder hunn hir eege Dateschutzrichtlinnen.',
+        },
+        rights: {
+          title: 'Är Rechter (DSGVO)',
+          body: 'Dir kënnt d\'Zoustëmmung zéckzéien andeems Dir Säit-Donnéeën am Browser läscht oder « Nëmmen néideg » bei der nächster Visite wielt. Dir hutt Recht op Avis, Berichtegung, Läschung, Aschränkung oder Protest, an op eng Plainte bei der Iwwerwaachungsautoritéit.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Froen iwwer dës Erklärung: Ivan Kolganov — @KolganovIvan op Telegram oder imkolganov op LinkedIn.',
+        },
+      },
     },
   }

@@ -118,5 +118,25 @@ export interface Translations {
   }
   footer: {
     source: string
+    privacy: string
+  }
+  cookies: {
+    banner: string
+    accept: string
+    reject: string
+    privacy: string
+  }
+  privacy: {
+    title: string
+    updated: string
+    close: string
+    sections: {
+      controller: { title: string; body: string }
+      data: { title: string; body: string }
+      cookies: { title: string; body: string }
+      thirdParty: { title: string; body: string }
+      rights: { title: string; body: string }
+      contact: { title: string; body: string }
+    }
   }
 }

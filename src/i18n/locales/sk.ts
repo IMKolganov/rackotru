@@ -82,5 +82,44 @@ export const sk: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Zdrojový kód na GitHube',
+      privacy: 'Ochrana súkromia',
+    },
+    cookies: {
+      banner:
+        'Stránka používa localStorage len pre jazyk a tému. Bez analytiky a reklamného sledovania. Podrobnosti v oznámení o ochrane súkromia.',
+      accept: 'Prijať',
+      reject: 'Len nevyhnutné',
+      privacy: 'Oznámenie o ochrane súkromia',
+    },
+    privacy: {
+      title: 'Oznámenie o ochrane súkromia',
+      updated: 'Posledná aktualizácia: júl 2026',
+      close: 'Zavrieť',
+      sections: {
+        controller: {
+          title: 'Prevádzkovateľ',
+          body: 'Ivan Kolganov prevádzkuje rackot.ru. Pre otázky ochrany súkromia: Telegram @KolganovIvan alebo LinkedIn (odkazy v sekcii Kontakt).',
+        },
+        data: {
+          title: 'Aké údaje sa spracúvajú',
+          body: 'Statická osobná stránka. Žiadne používateľské účty ani formuláre. Logy hostingu môžu obsahovať IP, typ prehliadača a čas požiadavky — ako pri bežnom webhostingu.',
+        },
+        cookies: {
+          title: 'Cookies a localStorage',
+          body: 'Po súhlase sa v prehliadači ukladá jazyk a téma (rackotru-locale, rackotru-theme, rackotru-consent). Len funkčné preferencie — nie sledovanie. Pri « Len nevyhnutné » sa preferencie medzi návštevami neukladajú.',
+        },
+        thirdParty: {
+          title: 'Obsah tretích strán',
+          body: 'Stránka načítava profilovú fotku z GitHubu, písma Google Fonts a odkazy na externé služby. Tí poskytovatelia majú vlastné zásady ochrany súkromia.',
+        },
+        rights: {
+          title: 'Vaše práva (GDPR)',
+          body: 'Súhlas môžete kedykoľvek odvolať vymazaním údajov stránky v prehliadači alebo voľbou « Len nevyhnutné » pri ďalšej návšteve. Máte právo na prístup, opravu, vymazanie, obmedzenie alebo námietku a podať sťažnosť dozornému orgánu.',
+        },
+        contact: {
+          title: 'Kontakt',
+          body: 'Otázky k tomuto oznámeniu: Ivan Kolganov — @KolganovIvan na Telegrame alebo imkolganov na LinkedIn.',
+        },
+      },
     },
   }

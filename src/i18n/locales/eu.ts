@@ -82,5 +82,44 @@ export const eu: DeepPartial<Translations> = {
     },
     footer: {
       source: 'Iturburua GitHub-en',
+      privacy: 'Pribatutasuna',
+    },
+    cookies: {
+      banner:
+        'Gune honek localStorage hizkuntza eta gaiarentzat soilik erabiltzen du. Analitikarik edo iragarki-jarraipenik ez. Ikusi pribatutasun-oharra.',
+      accept: 'Onartu',
+      reject: 'Beharrezkoak soilik',
+      privacy: 'Pribatutasun-oharra',
+    },
+    privacy: {
+      title: 'Pribatutasun-oharra',
+      updated: 'Azken eguneraketa: 2026ko uztaila',
+      close: 'Itxi',
+      sections: {
+        controller: {
+          title: 'Datuen arduraduna',
+          body: 'Ivan Kolganov-ek rackot.ru kudeatzen du. Pribatutasun-eskaeretarako: Telegram @KolganovIvan edo LinkedIn (estekak Kontaktua atalean).',
+        },
+        data: {
+          title: 'Ze datu prozesatzen dira',
+          body: 'Gune pertsonal estatikoa. Ez dago erabiltzaile-konturik edo formularioik. Ostatuaren erregistroek IP, nabigatzaile-mota eta eskaera-ordua izan ditzakete — web ostatu arruntean bezala.',
+        },
+        cookies: {
+          title: 'Cookieak eta localStorage',
+          body: 'Onartzen baduzu, hizkuntza eta gaia nabigatzailean gordetzen dira (rackotru-locale, rackotru-theme, rackotru-consent). Hobespen funtzionalak soilik — jarraipenik gabe. « Beharrezkoak soilik » aukeratuz gero, hobespenak ez dira bisiten artean gordetzen.',
+        },
+        thirdParty: {
+          title: 'Hirugarrenen edukia',
+          body: 'Guneak GitHub-eko profil-argazkia, Google Fonts-eko letra-tipoak eta kanpo-zerbitzuetarako estekak kargatzen ditu. Hornitzaile horiek beren pribatutasun-politikak dituzte.',
+        },
+        rights: {
+          title: 'Zure eskubideak (GDPR)',
+          body: 'Baimena edozein unetan ken dezakezu gunearen datuak nabigatzailetik ezabatuz edo hurrengo bisitan « Beharrezkoak soilik » aukeratuz. Eskubidea duzu sarbiderako, zuzentzeko, ezabatzeko, mugatzeko edo aurka egiteko, eta gainbegiratzeko erakundean kexa egiteko.',
+        },
+        contact: {
+          title: 'Kontaktua',
+          body: 'Ohar honi buruzko galderak: Ivan Kolganov — @KolganovIvan Telegram-en edo imkolganov LinkedIn-en.',
+        },
+      },
     },
   }

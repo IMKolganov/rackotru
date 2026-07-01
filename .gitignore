@@ -1,40 +1,37 @@
 # Dependencies
-/node_modules
-/vendor
+node_modules/
 
-# Laravel
-/public/hot
-/public/storage
-/storage/*.key
-/storage/
-/bootstrap/cache/*
-!bootstrap/cache/.gitkeep
+# Build output
+dist/
+dist-ssr/
+
+# Environment
 .env
-.env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
+.env.local
+.env.*.local
 
-# Composer binaries (not needed in repo)
-composer.phar
-composer-setup.php
+# Vite
+*.local
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage
+coverage/
 
 # IDE / OS
+.DS_Store
 .idea/
 .vscode/
-.DS_Store
 Thumbs.db
 
-# Personal documents (local only)
-public/personal-check.jpg
-storage/app/public/images/personal-check*.jpg
-
-# Media
-*.mp4
-*.tiff
-*.avi
-*.flv
-*.mov
-*.wmv
+# Editor swap files
+*.swp
+*~
